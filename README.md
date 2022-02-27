@@ -10,9 +10,6 @@ Acoustic Engineer learning React Native and Typescript, currently building an ap
 
 ---
 
-
----
-
 <!--
 **liambrockpy/liambrockpy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
