@@ -3,14 +3,14 @@
 Acoustic Engineer learning React Native and Typescript, currently building an app in order to streamline processes in my company.
 
 ---
-
-🎧 Listening to...
+<!-- 
+🎧 Listening to... -->
 
 <!-- [![Spotify](https://novatorem-topaz-omega.vercel.app/api/spotify)](https://open.spotify.com/user/evanity) -->
+<!-- 
+[<img src="https://novatorem-topaz-omega.vercel.app/api/spotify" alt="Spotify Playing" width="350" />](https://open.spotify.com/user/evanity) -->
 
-[<img src="https://novatorem-topaz-omega.vercel.app/api/spotify" alt="Spotify Playing" width="350" />](https://open.spotify.com/user/evanity)
-
----
+<!-- --- -->
 
 🧰 Toolbox
 
