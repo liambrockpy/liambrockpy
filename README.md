@@ -6,7 +6,7 @@ Acoustic Engineer learning React Native and Typescript, currently building an ap
 
 🎧 Listening to...
 
-[![Spotify](https://novatorem-liambrockpy.vercel.app/api/spotify)](https://open.spotify.com/user/evanity)
+[![Spotify](https://novatorem-topaz-omega.vercel.app/api/spotify)](https://open.spotify.com/user/evanity)
 
 ---
 
