@@ -4,11 +4,11 @@ Acoustic Engineer learning React Native and Typescript, currently building an ap
 
 ---
 
-🎧 Listening to...
+<!-- 🎧 Listening to...
 
 [![Spotify](https://novatorem-topaz-omega.vercel.app/api/spotify)](https://open.spotify.com/user/evanity)
 
----
+--- -->
 
 🧰 Toolbox
 
