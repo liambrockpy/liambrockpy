@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Acoustic Engineer learning React Native and Typescript, currently building an app in order to streamline processes in my company.
+Starting a new adventure with [Futureproof](https://www.getfutureproof.co.uk/) 🔭
 
 ---
 <!-- 
