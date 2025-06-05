@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Starting a new adventure at UCL as Analyst Developer, a 2-year placement provided by [La Fosse Academy](https://www.lafosseacademy.com) 🔭
+Software Engineer at UCL after completing a 2-year placement provided by [La Fosse Academy](https://www.lafosseacademy.com) 🔭
 
 ---
 
