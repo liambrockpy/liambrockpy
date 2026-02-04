@@ -71,7 +71,7 @@ async function generateMSN() {
 		})
 		.join("")
 
-	const svg = `<svg width="218" height="428" xmlns="http://www.w3.org/2000/svg">
+	const svg = `<svg width="218" height="458" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Title bar gradient - classic Windows XP blue -->
     <linearGradient id="titlebarShine" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -171,7 +171,7 @@ async function generateMSN() {
   </defs>
   
   <!-- Window outer frame -->
-  <rect width="218" height="428" fill="#0A246A" rx="6"/>
+  <rect width="218" height="458" fill="#0A246A" rx="6"/>
   
   <!-- Title bar -->
   <rect x="1" y="1" width="216" height="22" fill="url(#titlebarShine)" rx="5"/>
@@ -212,7 +212,7 @@ async function generateMSN() {
   <line x1="1" y1="41" x2="217" y2="41" stroke="#9DB9D9" stroke-width="1"/>
   
   <!-- Main window area -->
-  <rect x="1" y="42" width="216" height="384" fill="url(#windowBg)"/>
+  <rect x="1" y="42" width="216" height="414" fill="url(#windowBg)"/>
   
   <!-- User info section background -->
   <rect x="6" y="47" width="206" height="68" fill="#C8DCF8" rx="3"/>
@@ -282,9 +282,9 @@ async function generateMSN() {
   <!-- Online status dropdown appearance -->
   <g transform="translate(74, 66)">
     <text x="0" y="12" font-family="Tahoma, sans-serif" font-size="12" fill="#000" font-weight="bold">
-      ${escapeXml(truncate(user.name || user.login, 14))}
+      ${escapeXml(truncate(user.login, 14))}
     </text>
-    <text x="${Math.min((user.name || user.login).length * 7, 98)}" y="12" font-family="Tahoma, sans-serif" font-size="11" fill="#008000"> (${status})</text>
+    <text x="${Math.min(user.login.length * 7, 98)}" y="12" font-family="Tahoma, sans-serif" font-size="11" fill="#008000"> (${status})</text>
   </g>
   
   <!-- Email notification box -->
@@ -334,7 +334,7 @@ async function generateMSN() {
   ${offlineContacts}
   
   <!-- "I want to..." section -->
-  <rect x="1" y="336" width="216" height="90" fill="url(#bottomPanel)"/>
+  <rect x="1" y="336" width="216" height="120" fill="url(#bottomPanel)"/>
   <line x1="1" y1="336" x2="217" y2="336" stroke="#9DB9D9" stroke-width="1"/>
   
   <g transform="translate(8, 350)">
@@ -365,11 +365,11 @@ async function generateMSN() {
       <text x="16" y="10" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC">Send a File or Photo</text>
     </g>
     
-    <text x="0" y="58" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC" font-weight="bold">More</text>
+    <text x="0" y="52" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC" font-weight="bold">More</text>
   </g>
   
   <!-- Bottom MSN branding -->
-  <g transform="translate(40, 406)">
+  <g transform="translate(40, 438)">
     <!-- MSN Butterfly -->
     <g transform="scale(0.32)">
       <ellipse cx="12" cy="12" rx="10" ry="14" fill="#4AB8E8" transform="rotate(-20, 12, 12)"/>
@@ -387,7 +387,7 @@ async function generateMSN() {
   </g>
   
   <!-- Window border -->
-  <rect x="0" y="0" width="218" height="428" fill="none" stroke="#0A246A" stroke-width="2" rx="6"/>
+  <rect x="0" y="0" width="218" height="458" fill="none" stroke="#0A246A" stroke-width="2" rx="6"/>
 </svg>`
 
 	// Ensure assets directory exists
