@@ -1,0 +1,261 @@
+<svg width="218" height="428" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Title bar gradient - classic Windows XP blue -->
+    <linearGradient id="titlebar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A246A"/>
+      <stop offset="8%" style="stop-color:#0A246A"/>
+      <stop offset="10%" style="stop-color:#A6CAF0"/>
+      <stop offset="90%" style="stop-color:#0A246A"/>
+      <stop offset="100%" style="stop-color:#0A246A"/>
+    </linearGradient>
+    
+    <!-- Title bar shine effect -->
+    <linearGradient id="titlebarShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3C81E5"/>
+      <stop offset="50%" style="stop-color:#2E6CD1"/>
+      <stop offset="100%" style="stop-color:#1D4FA0"/>
+    </linearGradient>
+    
+    <!-- Bottom panel gradient -->
+    <linearGradient id="bottomPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D6DFF7"/>
+      <stop offset="100%" style="stop-color:#C3CCE0"/>
+    </linearGradient>
+    
+    <!-- Window background gradient -->
+    <linearGradient id="windowBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4E4FF"/>
+      <stop offset="100%" style="stop-color:#C0D8FF"/>
+    </linearGradient>
+    
+    <!-- MSN Buddy icon colors -->
+    <linearGradient id="buddyGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4AC94A"/>
+      <stop offset="100%" style="stop-color:#2E8B2E"/>
+    </linearGradient>
+    <linearGradient id="buddyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90C9"/>
+      <stop offset="100%" style="stop-color:#2E5B8B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Window outer frame -->
+  <rect width="218" height="428" fill="#0A246A" rx="6"/>
+  
+  <!-- Title bar -->
+  <rect x="1" y="1" width="216" height="22" fill="url(#titlebarShine)" rx="5"/>
+  <rect x="1" y="18" width="216" height="5" fill="#1D4FA0"/>
+  
+  <!-- Title bar icon (small MSN icon) -->
+  <g transform="translate(5, 5)">
+    <circle cx="6" cy="6" r="4" fill="#4AC94A"/>
+    <circle cx="10" cy="8" r="4" fill="#4A90C9"/>
+  </g>
+  
+  <!-- Title text -->
+  <text x="22" y="15" font-family="Tahoma, sans-serif" font-size="11" fill="#FFFFFF" font-weight="bold">
+    MSN Messenger
+  </text>
+  
+  <!-- Window controls -->
+  <g transform="translate(158, 4)">
+    <!-- Minimize -->
+    <rect x="0" y="0" width="17" height="14" fill="#1D4FA0" stroke="#3C81E5" stroke-width="1" rx="2"/>
+    <line x1="4" y1="10" x2="12" y2="10" stroke="#fff" stroke-width="2"/>
+    
+    <!-- Maximize -->
+    <rect x="19" y="0" width="17" height="14" fill="#1D4FA0" stroke="#3C81E5" stroke-width="1" rx="2"/>
+    <rect x="23" y="3" width="9" height="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+    
+    <!-- Close -->
+    <rect x="38" y="0" width="17" height="14" fill="#C94A4A" stroke="#E57373" stroke-width="1" rx="2"/>
+    <line x1="42" y1="3" x2="51" y2="11" stroke="#fff" stroke-width="2"/>
+    <line x1="51" y1="3" x2="42" y2="11" stroke="#fff" stroke-width="2"/>
+  </g>
+  
+  <!-- Menu bar -->
+  <rect x="1" y="23" width="216" height="18" fill="#D4E4FF"/>
+  <text x="8" y="36" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+    <tspan>File</tspan>
+    <tspan dx="12">Actions</tspan>
+    <tspan dx="12">Tools</tspan>
+    <tspan dx="12">Help</tspan>
+  </text>
+  <line x1="1" y1="41" x2="217" y2="41" stroke="#9DB9D9" stroke-width="1"/>
+  
+  <!-- Main window area -->
+  <rect x="1" y="42" width="216" height="384" fill="url(#windowBg)"/>
+  
+  <!-- User info section background -->
+  <rect x="6" y="47" width="206" height="68" fill="#C8DCF8" rx="3"/>
+  
+  <!-- MSN Buddy Icon (two people silhouette) -->
+  <g transform="translate(14, 52)">
+    <rect x="0" y="0" width="52" height="50" fill="#B8CCE8" stroke="#8CAAD4" stroke-width="1" rx="3"/>
+    <!-- Green person (front) -->
+    <ellipse cx="20" cy="18" rx="8" ry="9" fill="url(#buddyGreen)"/>
+    <ellipse cx="20" cy="38" rx="12" ry="10" fill="url(#buddyGreen)"/>
+    <!-- Blue person (back) -->
+    <ellipse cx="34" cy="14" rx="7" ry="8" fill="url(#buddyBlue)"/>
+    <ellipse cx="34" cy="32" rx="10" ry="9" fill="url(#buddyBlue)"/>
+  </g>
+  
+  <!-- My Status label and username -->
+  <text x="74" y="62" font-family="Tahoma, sans-serif" font-size="10" fill="#666666">My Status:</text>
+  
+  <!-- Online status dropdown appearance -->
+  <g transform="translate(74, 66)">
+    <text x="0" y="12" font-family="Tahoma, sans-serif" font-size="12" fill="#000" font-weight="bold">
+      Liam Brock
+    </text>
+    <text x="70" y="12" font-family="Tahoma, sans-serif" font-size="11" fill="#008000"> (Online)</text>
+  </g>
+  
+  <!-- Email notification box -->
+  <g transform="translate(6, 120)">
+    <rect x="0" y="0" width="206" height="24" fill="#FFFFFF" stroke="#7B9BC9" stroke-width="1" rx="2"/>
+    
+    <!-- MSN Butterfly icon -->
+    <g transform="translate(6, 4)">
+      <ellipse cx="4" cy="6" rx="4" ry="5" fill="#FF6B35"/>
+      <ellipse cx="12" cy="6" rx="4" ry="5" fill="#FFB800"/>
+      <ellipse cx="4" cy="12" rx="3" ry="4" fill="#00A4EF"/>
+      <ellipse cx="12" cy="12" rx="3" ry="4" fill="#7FBA00"/>
+      <ellipse cx="8" cy="9" rx="2" ry="5" fill="#555"/>
+    </g>
+    
+    <text x="26" y="16" font-family="Tahoma, sans-serif" font-size="10" fill="#0066CC" text-decoration="underline">
+      19 repositories · 3 followers
+    </text>
+  </g>
+  
+  <!-- Separator line -->
+  <line x1="6" y1="152" x2="212" y2="152" stroke="#9DB9D9" stroke-width="1"/>
+  
+  <!-- Contact List Area -->
+  <rect x="6" y="156" width="206" height="176" fill="#FFFFFF" stroke="#7B9BC9" stroke-width="1"/>
+  
+  <!-- Online section header -->
+  <g transform="translate(10, 170)">
+    <!-- Expand arrow -->
+    <polygon points="0,0 8,4 0,8" fill="#333"/>
+    <text x="14" y="7" font-family="Tahoma, sans-serif" font-size="11" fill="#000" font-weight="bold">
+      Online (3)
+    </text>
+  </g>
+  
+  <!-- Online contacts -->
+  
+      <g>
+        <!-- Status icon -->
+        <g transform="translate(24, 205)">
+          <rect x="0" y="0" width="12" height="12" fill="#00AA00" rx="1"/>
+          <rect x="2" y="2" width="3" height="8" fill="#fff"/>
+          <rect x="5" y="4" width="3" height="4" fill="#fff"/>
+        </g>
+        <text x="42" y="213" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+          adambirdie
+        </text>
+      </g>
+      <g>
+        <!-- Status icon -->
+        <g transform="translate(24, 223)">
+          <rect x="0" y="0" width="12" height="12" fill="#FFA500" rx="1"/>
+          <rect x="2" y="2" width="3" height="8" fill="#fff"/>
+          <rect x="5" y="4" width="3" height="4" fill="#fff"/>
+        </g>
+        <text x="42" y="231" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+          MorganG69 (Away)
+        </text>
+      </g>
+      <g>
+        <!-- Status icon -->
+        <g transform="translate(24, 241)">
+          <rect x="0" y="0" width="12" height="12" fill="#00AA00" rx="1"/>
+          <rect x="2" y="2" width="3" height="8" fill="#fff"/>
+          <rect x="5" y="4" width="3" height="4" fill="#fff"/>
+        </g>
+        <text x="42" y="249" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+          developer-job-sim…
+        </text>
+      </g>
+  
+  <!-- Not Online section header -->
+  <g transform="translate(10, 263)">
+    <!-- Collapsed arrow -->
+    <polygon points="0,0 8,4 0,8" fill="#333"/>
+    <text x="14" y="7" font-family="Tahoma, sans-serif" font-size="11" fill="#000" font-weight="bold">
+      Not Online (2)
+    </text>
+  </g>
+  
+  <!-- Offline contacts -->
+  
+      <text x="42" y="295" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+        ~*adambirdie*~
+      </text>
+      <text x="42" y="313" font-family="Tahoma, sans-serif" font-size="11" fill="#000">
+        ~*BotBitmap*~
+      </text>
+  
+  <!-- "I want to..." section -->
+  <rect x="1" y="336" width="216" height="90" fill="url(#bottomPanel)"/>
+  <line x1="1" y1="336" x2="217" y2="336" stroke="#9DB9D9" stroke-width="1"/>
+  
+  <!-- Section header with collapse arrow -->
+  <g transform="translate(8, 350)">
+    <polygon points="0,0 8,4 0,8" fill="#2D6BBF"/>
+    <text x="14" y="7" font-family="Tahoma, sans-serif" font-size="11" fill="#000" font-weight="bold">
+      I want to...
+    </text>
+  </g>
+  
+  <!-- Action links with icons -->
+  <g transform="translate(16, 364)">
+    <!-- Add a Contact -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="5" fill="#6BB34A" stroke="#4A8532" stroke-width="1"/>
+      <text x="4" y="9" font-family="Arial" font-size="8" fill="#fff" font-weight="bold">+</text>
+      <text x="16" y="10" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC">Add a Contact</text>
+    </g>
+    
+    <!-- Send an Instant Message -->
+    <g transform="translate(0, 16)">
+      <rect x="1" y="1" width="10" height="8" fill="#FFE566" stroke="#CCA300" stroke-width="1" rx="1"/>
+      <line x1="1" y1="1" x2="6" y2="5" stroke="#CCA300" stroke-width="1"/>
+      <line x1="11" y1="1" x2="6" y2="5" stroke="#CCA300" stroke-width="1"/>
+      <text x="16" y="10" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC">Send an Instant Message</text>
+    </g>
+    
+    <!-- Send a File or Photo -->
+    <g transform="translate(0, 32)">
+      <rect x="2" y="0" width="9" height="11" fill="#F5F5DC" stroke="#999" stroke-width="1"/>
+      <polyline points="7,0 7,3 11,3" fill="none" stroke="#999" stroke-width="1"/>
+      <text x="16" y="10" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC">Send a File or Photo</text>
+    </g>
+    
+    <!-- More link -->
+    <text x="0" y="58" font-family="Tahoma, sans-serif" font-size="11" fill="#0066CC" font-weight="bold">More</text>
+  </g>
+  
+  <!-- Bottom MSN branding -->
+  <g transform="translate(55, 408)">
+    <!-- MSN Butterfly -->
+    <g transform="translate(0, 0) scale(0.7)">
+      <ellipse cx="8" cy="8" rx="7" ry="9" fill="#FF6B35"/>
+      <ellipse cx="22" cy="8" rx="7" ry="9" fill="#FFB800"/>
+      <ellipse cx="8" cy="22" rx="6" ry="8" fill="#00A4EF"/>
+      <ellipse cx="22" cy="22" rx="6" ry="8" fill="#7FBA00"/>
+      <ellipse cx="15" cy="15" rx="3" ry="8" fill="#333"/>
+    </g>
+    <text x="26" y="18" font-family="Arial, sans-serif" font-size="14" fill="#333" font-style="italic" font-weight="bold">
+      msn
+    </text>
+    <text x="52" y="18" font-family="Times New Roman, serif" font-size="14" fill="#333">
+      Messenger
+    </text>
+  </g>
+  
+  <!-- Window border (bottom and right shadow) -->
+  <rect x="0" y="0" width="218" height="428" fill="none" stroke="#0A246A" stroke-width="2" rx="6"/>
+</svg>
